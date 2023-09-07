@@ -45,6 +45,7 @@ arc (818, 130, 283, 140, radians(320), radians(360));
 noStroke();
 ellipse (505, 320, 283, 140);
 
+stroke (0);
 noFill();
 rect (50, 250, 283, 140, 25, 25, 25, 25);
 
