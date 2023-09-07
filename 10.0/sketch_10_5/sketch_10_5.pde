@@ -87,7 +87,7 @@ void KeerKnop () {
   textSize (20);
   background (255);
   fill(0);
-  text (mijnGetal + " Keer " + mijnGetal2 + " = " + mijnGetal / mijnGetal2, 10, 60);
+  text (mijnGetal + " Keer " + mijnGetal2 + " = " + mijnGetal * mijnGetal2, 10, 60);
   println (mijnGetal + " Keer " + mijnGetal2 + " = " + mijnGetal * mijnGetal2);
 }
 
@@ -98,7 +98,7 @@ void MinKnop () {
   textSize (20);
   background (255);
   fill(0);
-  text (mijnGetal + " Min " + mijnGetal2 + " = " + mijnGetal / mijnGetal2, 10, 60);
+  text (mijnGetal + " Min " + mijnGetal2 + " = " + (mijnGetal - mijnGetal2), 10, 60);
   println (mijnGetal + " Min " + mijnGetal2 + " = " + (mijnGetal - mijnGetal2));
 }
 
@@ -109,7 +109,7 @@ void PlusKnop () {
   textSize (20);
   background (255);
   fill(0);
-  text (mijnGetal + " Plus " + mijnGetal2 + " = " + mijnGetal / mijnGetal2, 10, 60);
+  text (mijnGetal + " Plus " + mijnGetal2 + " = " + (mijnGetal + mijnGetal2), 10, 60);
   println (mijnGetal + " Plus " + mijnGetal2 + " = " + (mijnGetal + mijnGetal2));
 }
 
