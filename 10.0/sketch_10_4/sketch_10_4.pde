@@ -14,8 +14,6 @@ int Total = 0;
 
 void setup () {
    size (2000, 800);
-   
-   textSize (80);
 
    cp5 = new ControlP5(this);
    
@@ -54,5 +52,10 @@ println("The amount of parents present is: " + j);
 
 void draw () {
   background (0);
+  textSize (80);
    text ("The total amount of people present is: " + Total, 30, 80);
+   
+   textSize (40);
+   text ("The total amount of students present is: " + k, 30, 760);
+   text ("The total amount of parents present is: " + j, 1200, 760);
 }

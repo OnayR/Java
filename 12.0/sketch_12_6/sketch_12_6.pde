@@ -9,8 +9,6 @@ void setup () {
 }
 
 void draw () {
-  
-  println (keyCode);
 }
 
 void keyPressed () {

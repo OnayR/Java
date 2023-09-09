@@ -12,7 +12,7 @@ void setup () {
   size (300, 200);
   background (0);
   textSize (20);
-  text ("Press Space to start", 65, 100);
+  text ("Press Enter to start", 65, 100);
 }
 
 void draw () {
