@@ -1,3 +1,3 @@
-float Reken = 56 + (54 % 9);
+float Reken = 56 + (56 % 9);
 
 println (Reken);
