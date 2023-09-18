@@ -23,6 +23,7 @@ int point2 = 0;
 int maxPoint = 0;
 int maxHit = 0;
 float totalPoints;
+boolean bot = false;
 
 
 void setup() {
@@ -75,18 +76,9 @@ text (point2, 685, 10);
 
 
 //bounce back
-if (xpos > locaX && xpos < locaX + 10 && ypos > locaY && ypos < locaY + 60 && maxHit == 0) {
-  xdirection *= -1;
-  maxHit++;
-}
-if (xpos > locaX2 && xpos < locaX2 + 10 && ypos > locaY2 && ypos < locaY2 + 60 && maxHit == 0) {
-  xdirection *= -1;
-  maxHit++;
-}
-if (xpos > botLocationX && xpos < botLocationX + 10 && ypos > botLocationY && ypos < botLocationY + 60 && maxHit == 0) {
-  xdirection *= -1;
-  maxHit++;
-}
+hitChar1();
+hitChar2();
+hitBot();
 
 if (xpos == width / 2) {
   maxHit = 0;
@@ -102,7 +94,7 @@ if (botLocationY < ypos) {
 //character spawn
   line(350, 0, 350, 500);
   character(30, locaY2);
-  bot(655, botLocationY);
+  character(655, locaY);
   ellipse(xpos, ypos, rad, rad);
   
 }
@@ -152,7 +144,26 @@ void bot(int locaX, int locaY) {
   rect (locaX, locaY, 10, 60, 10);
 }
 
+void hitChar1() {
+  if (xpos > locaX && xpos < locaX + 20 && ypos > locaY && ypos < locaY + 60 && maxHit == 0) {
+  xdirection *= -1;
+  maxHit++;
+}
+}
 
+void hitChar2() {
+  if (xpos > locaX2 && xpos < locaX2 + 20 && ypos > locaY2 && ypos < locaY2 + 60 && maxHit == 0) {
+  xdirection *= -1;
+  maxHit++;
+}
+}
+
+void hitBot() {
+  if (xpos > botLocationX && xpos < botLocationX + 20 && ypos > botLocationY && ypos < botLocationY + 60 && maxHit == 0 && bot == true) {
+  xdirection *= -1;
+  maxHit++;
+}
+}
 
 
 /*
