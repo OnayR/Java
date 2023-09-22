@@ -172,7 +172,7 @@ void checkDead() {
       endGame = true;
     }
 
-    if (headX[1]>=(width-10) || headY[1]>=(height-10) || headX[1]<=10 || headY[1]<=10) {
+    if (headX[1]>=(width-10) || headY[1]>=(height-10) || headX[1]<=9 || headY[1]<=9) {
       stroke(0);
       fill(255);
       rect(175, 165, 160, 100);
